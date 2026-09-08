@@ -121,7 +121,7 @@ I'm involved in applied research across two domains:
 
 Research work through **IIIT-H / iHub-Data**, involving computer-vision experimentation and evaluation.
 
-### Computational Biology / Machine Learning
+### AI in Drug Discovery
 
 Research with **Drugparadigm** on bispecific-antibody manufacturability, involving large biological sequence datasets and constrained evaluation settings.
 
