@@ -2,220 +2,226 @@
   <img src="./assets/profile-banner.png" alt="Mahaboob Ashraf — Software Engineering, Applied AI, Reliable Systems" width="100%" />
 </p>
 
-I'm a Computer Science undergraduate building software at the intersection of **AI systems, backend engineering, reliability, and applied machine learning**.
+<p align="center">
+  <a href="https://github.com/Mahaboob-Ashraf">
+    <img src="https://img.shields.io/badge/GitHub-Mahaboob--Ashraf-181717?style=flat-square&logo=github" alt="GitHub" />
+  </a>
+  <a href="https://www.linkedin.com/in/mohammad-mahaboob-ashraf-a0b17b321/">
+    <img src="https://img.shields.io/badge/LinkedIn-Mahaboob%20Ashraf-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn" />
+  </a>
+  <img src="https://img.shields.io/badge/Open%20to-SWE%20%2F%20Applied%20AI%20Internships-2ea44f?style=flat-square" alt="Open to internships" />
+</p>
 
-I like projects where the interesting part isn't just getting a demo to work — it's deciding **what the AI is allowed to control, what deterministic software must guarantee, what happens when dependencies fail, and how the system can prove that it behaved correctly.**
-
-Currently focused on:
-- building production-minded AI and backend systems;
-- applied AI / ML research;
-- distributed systems and reliability;
-- data structures, algorithms, and competitive programming.
-
----
-
-## Selected Work
-
-### [Amana — Agentic Commerce Gateway](https://github.com/Mahaboob-Ashraf/Agentic-Commerce-Gateway)
-
-**Turning existing merchants into businesses that AI agents can transact with safely.**
-
-Built a merchant-agentization pipeline and Safe AI Buyer where AI handles unstructured intent and diagnosis, while deterministic software controls transaction authority and payment truth.
-
-`Java` `Spring Boot` `Next.js` `PostgreSQL` `pgvector` `Gemini` `Razorpay`
-
-Highlights:
-- agentizes existing merchant APIs through inspect → map → test → diagnose → repair;
-- immutable proposal → authorization → execution payment authority;
-- Razorpay Test Mode with webhook verification and reconciliation;
-- deterministic fail-closed safety checks;
-- 250-case adversarial safety proof.
-
-**Principle:** *AI handles meaning. Deterministic software controls truth, authority, and money.*
+<p align="center">
+  <strong>Building AI systems, backend infrastructure, and reliable software for real-world problems.</strong>
+</p>
 
 ---
 
-### [RepoPilot](https://github.com/Mahaboob-Ashraf/Repo-Pilot)
+## About
 
-**A local-first coding-agent platform built to understand repositories before changing them.**
+I'm a Computer Science undergraduate focused on **Software Engineering, Applied AI, backend systems, and reliability**.
 
-RepoPilot is being developed around structure-aware repository indexing, retrieval, local inference, bounded execution, and human approval.
+I’m most interested in projects where the difficult part is not just making something work once, but making it **correct, inspectable, failure-aware, and useful to real users**.
 
-`Python` `FastAPI` `tree-sitter` `BM25` `Ollama`
-
-Currently implemented:
-- repository discovery and ingestion;
-- Python structure-aware parsing and semantic code chunks;
-- source provenance and lexical code retrieval;
-- Ollama provider boundary;
-- automated retrieval, parser, pipeline, and API tests.
-
-The longer-term goal is an inspectable:
-
-`retrieve → plan → approve → patch → test → critique`
-
-workflow rather than an unrestricted autonomous coding bot.
+My work spans:
+- AI systems with deterministic safety boundaries
+- backend and reliability engineering
+- developer tooling
+- applied machine learning
+- research
+- DSA and competitive programming
 
 ---
 
-### [HookRelay](https://github.com/Mahaboob-Ashraf/HookRelay)
+## Featured Projects
 
-**Reliable webhook delivery when “just POST it” is no longer enough.**
-
-A backend reliability system built around explicit failure handling and at-least-once delivery semantics.
-
-`TypeScript` `Fastify` `PostgreSQL` `Redis` `BullMQ`
-
-Includes:
-- durable delivery state;
-- HMAC-SHA256 signed requests;
-- bounded retries and failure classification;
-- idempotent ingestion;
-- persisted attempt history;
-- dead-letter handling;
-- manual replay;
-- PostgreSQL as source of truth.
+| Project | What it is | Stack | Highlight |
+|---|---|---|---|
+| **[Amana](https://github.com/Mahaboob-Ashraf/Agentic-Commerce-Gateway)** | Agentic commerce gateway that turns existing merchant systems into AI-transactable businesses and enables a safe AI buyer | Java · Spring Boot · Next.js · PostgreSQL · pgvector · Gemini · Razorpay | **250/250 deterministic safety cases passed** · fail-closed transaction authority |
+| **[RepoPilot](https://github.com/Mahaboob-Ashraf/Repo-Pilot)** | Local-first coding-agent platform built to understand repositories before changing them | Python · FastAPI · tree-sitter · BM25 · Ollama | **AST-aware repository understanding** · local inference · human-in-the-loop architecture |
+| **[HookRelay](https://github.com/Mahaboob-Ashraf/HookRelay)** | Reliable webhook delivery system for explicit failure handling and recovery | TypeScript · Fastify · PostgreSQL · Redis · BullMQ | **Idempotency · retries · HMAC signing · DLQ · replay · at-least-once delivery** |
+| **[VoteReady](https://github.com/Mahaboob-Ashraf/VoteReady)** | Citizen-first household navigator for India's SIR voter process | Next.js · TypeScript · Gemini · Supabase · PostgreSQL | **Multilingual record extraction + deterministic matching + human confirmation** |
+| **[PS-Prep](https://github.com/Mahaboob-Ashraf/ps-prep)** | LeetCode-style programming-prep platform built for my college's Project School selection test | React · Vite · Supabase · Gemini · Monaco Editor | **~100+ student users** · improved based on real user feedback |
+| **[Skin Lesion Classification](https://github.com/Mahaboob-Ashraf/skin-lesion-classification)** | Error-driven HAM10000 skin-lesion classification study | PyTorch · TensorFlow · ResNet50 · Grad-CAM | **57.29% → 84.76% test accuracy** with class-imbalance-aware training |
 
 ---
 
-### [VoteReady](https://github.com/Mahaboob-Ashraf/VoteReady)
+## Project Notes
 
-**A citizen-first household navigator for India's SIR voter process.**
+### Amana
 
-Built around a real public-service usability problem: different household members can have different voter-status situations, legacy-record issues, notices, and required next actions.
+**AI handles meaning. Deterministic software controls truth, authority, and money.**
 
-`Next.js` `TypeScript` `Gemini` `Supabase` `PostgreSQL`
+Amana separates AI reasoning from financial authority.
 
-Includes:
-- household-level guidance;
-- multilingual legacy-electoral-record extraction;
-- deterministic candidate matching;
-- human confirmation before consequential decisions;
-- hearing-rescue flows;
-- synthetic demo identities and privacy-safe test data.
+The AI can understand intent, inspect merchant APIs, diagnose failures, and suggest mappings, but deterministic software owns:
 
-[Live demo](https://voteready-alpha.vercel.app)
+`proposal → authorization → execution → payment truth`
+
+The system includes verified Razorpay Test Mode payments, reconciliation, bounded execution, fail-closed checks, and a deterministic adversarial safety proof.
 
 ---
 
-### [PS-Prep](https://github.com/Mahaboob-Ashraf/ps-prep)
+### RepoPilot
 
-**A programming-prep platform built for students at my college — and improved after they actually used it.**
+RepoPilot is being built around the idea that a coding agent should **understand repository structure before attempting a patch**.
 
-I built PS-Prep when preparation material for our Project School selection test was scattered across old class resources, coding environments, solutions, and chat tools.
+Current implementation includes:
+- repository discovery and ingestion
+- Python structure-aware parsing
+- semantic code chunks with provenance
+- lexical retrieval
+- local Ollama integration
+- automated parser, retrieval, pipeline, and API tests
 
-I shared it across multiple classes during exam season, where it was used by roughly **100+ students**.
+Target direction:
 
-`React` `Vite` `Supabase` `Gemini` `Monaco Editor`
+```text
+Repository + Issue
+        ↓
+Understand Structure
+        ↓
+Retrieve Evidence
+        ↓
+Plan
+        ↓
+Human Approval
+        ↓
+Patch
+        ↓
+Test
+        ↓
+Critique
+```
 
-The platform combines:
-- curated programming questions;
-- browser-based Python execution;
-- solutions and explanations;
-- contextual AI tutoring;
-- topic-based preparation;
-- a LeetCode-style coding playground.
+---
 
-One of the first user-reported problems was the inability to provide input to programs using `input()`. I added a dedicated stdin workflow based directly on that feedback.
+### PS-Prep
+
+PS-Prep started from a problem my classmates and I were actually facing.
+
+Preparation material for our Project School selection test was scattered across old resources, coding environments, solutions, and chat tools, so I built a single platform for practice.
+
+I shared it across multiple college classes during exam season, where it was used by roughly **100+ students**.
+
+A common user complaint was that programs using `input()` had no convenient way to receive values. I added a dedicated stdin workflow based directly on that feedback.
 
 **Build → ship → get feedback → fix the real problem.**
 
 ---
 
-### [Skin Lesion Classification](https://github.com/Mahaboob-Ashraf/skin-lesion-classification)
-
-**Error-driven deep-learning experimentation on the HAM10000 dataset.**
-
-Started with a custom TensorFlow CNN, analyzed severe minority-class failures, then redesigned the training pipeline around weighted ResNet50 transfer learning.
-
-`PyTorch` `TensorFlow` `ResNet50` `Grad-CAM`
-
-Results on the project test split:
-- custom CNN: **57.29% accuracy**
-- weighted ResNet50: **84.76% accuracy**
-- melanoma recall: **71%**
-- basal cell carcinoma recall: **84%**
-
-The project focuses on **class imbalance, per-class error analysis, transfer learning, and interpretability** rather than treating aggregate accuracy as the whole story.
-
----
-
 ## Research
 
-Alongside engineering projects, I'm involved in applied research spanning:
+I’m also involved in applied research across two domains:
 
-- **Computer Vision** — research work through IIIT-H / iHub-Data;
-- **Computational Biology / ML** — bispecific-antibody manufacturability research with Drugparadigm.
+### Computer Vision
+Research work through **IIIT-H / iHub-Data** involving computer-vision experimentation and evaluation.
 
-I’m especially interested in work where ML systems have to survive contact with **messy data, limited labels, evaluation constraints, and real domain assumptions**.
+### Computational Biology / Machine Learning
+Research with **Drugparadigm** on bispecific-antibody manufacturability, working with large biological sequence datasets and constrained evaluation settings.
+
+I’m particularly interested in ML problems involving:
+
+`messy data` · `limited labels` · `domain constraints` · `evaluation uncertainty`
 
 ---
 
-## How I Like to Build
+## Engineering Focus
 
-```text
-Understand the failure modes
-        ↓
-Build the smallest correct system
-        ↓
-Make authority boundaries explicit
-        ↓
-Test the uncomfortable cases
-        ↓
-Measure what actually happened
-        ↓
-Iterate
-```
+<table>
+<tr>
+<td width="50%" valign="top">
 
-A few themes show up repeatedly in my work:
+### AI with boundaries
 
-**AI with boundaries**  
-Models handle ambiguity and reasoning; deterministic code owns irreversible decisions.
+Models are useful for ambiguity, language, diagnosis, and planning.
 
-**Reliability before claims**  
-Retries, idempotency, reconciliation, failure states, and recovery paths are part of the design — not afterthoughts.
+Deterministic software should own irreversible authority and correctness-critical decisions.
 
-**Evaluation over demos**  
-I prefer measured behavior, failure analysis, and reproducible proof over “it worked once.”
+</td>
+<td width="50%" valign="top">
 
-**Build for real problems**  
-The best projects usually start with somebody actually needing the thing.
+### Reliability before claims
+
+Retries, idempotency, reconciliation, concurrency, and recovery are part of the system design, not cleanup work.
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### Evaluation over demos
+
+I prefer measured behavior, failure analysis, tests, and reproducible proof over a system that only worked once.
+
+</td>
+<td width="50%" valign="top">
+
+### Real problems over feature lists
+
+The projects I value most usually start with somebody genuinely needing the thing.
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## Core Stack
 
-**Languages**
+<p>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+</p>
 
-`Java` · `C++` · `Python` · `TypeScript` · `JavaScript`
+<p>
+  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=fastify&logoColor=white" alt="Fastify" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+</p>
 
-**Backend & Systems**
+<p>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow" />
+  <img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini" />
+  <img src="https://img.shields.io/badge/Ollama-000000?style=flat-square" alt="Ollama" />
+</p>
 
-`Spring Boot` · `FastAPI` · `Fastify` · `PostgreSQL` · `Redis` · `BullMQ` · `Docker`
-
-**AI / ML**
-
-`PyTorch` · `TensorFlow` · `Gemini` · `Ollama` · `tree-sitter` · `pgvector`
-
-**Frontend**
-
-`React` · `Next.js` · `Vite`
+<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+</p>
 
 ---
 
 ## Currently
 
-- building deeper backend, AI-systems, and reliability projects;
-- working on research;
-- practicing DSA and competitive programming;
-- contributing to open source;
-- looking toward **Software Engineering / Applied AI internships**.
+- building deeper **backend, AI-systems, and reliability** projects
+- working on applied **ML research**
+- practicing **DSA and competitive programming**
+- contributing to **open source**
+- preparing for **Software Engineering / Applied AI internships**
 
 ---
 
 ## Connect
 
-[LinkedIn](https://www.linkedin.com/in/mohammad-mahaboob-ashraf-a0b17b321/) ·
-[GitHub](https://github.com/Mahaboob-Ashraf)
+<p>
+  <a href="https://www.linkedin.com/in/mohammad-mahaboob-ashraf-a0b17b321/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/Mahaboob-Ashraf">
+    <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</p>
 
-> I’m particularly interested in engineering problems involving **AI systems, backend infrastructure, reliability, developer tooling, and applied ML**.
+I’m particularly interested in opportunities involving **AI systems, backend infrastructure, reliability, developer tooling, and applied machine learning**.
