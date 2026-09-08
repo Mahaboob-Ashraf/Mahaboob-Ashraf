@@ -1,6 +1,6 @@
-# Mahaboob Ashraf
-
-### Software Engineer · Applied AI · Backend & Reliable Systems
+<p align="center">
+  <img src="./assets/profile-banner.png" alt="Mahaboob Ashraf — Software Engineering, Applied AI, Reliable Systems" width="100%" />
+</p>
 
 I'm a Computer Science undergraduate building software at the intersection of **AI systems, backend engineering, reliability, and applied machine learning**.
 
